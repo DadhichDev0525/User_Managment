@@ -1,16 +1,62 @@
-<<<<<<< HEAD
-# React + Vite
+# User Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+The **User Management App** is a web application that allows admins to manage users effectively. It provides functionalities like creating, updating, deleting, and searching users. The app is built using **React.js** for the frontend and interacts with a backend API for data management.
 
-Currently, two official plugins are available:
+## Features
+- **User Authentication** (Login with email & password)
+- **User Listing** with pagination
+- **Search Users** by name
+- **Add, Edit, and Delete Users**
+- **Protected Routes** to ensure authentication
+- **Toast Notifications** for better user experience
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend:** React.js, Tailwind CSS
+- **State Management:** useState, useEffect
+- **Routing:** React Router
+- **API Calls:** Axios
+- **Notifications:** React Hot Toast
+- **Authentication:** Token-based authentication (stored in localStorage)
 
-## Expanding the ESLint configuration
+## Installation & Setup
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/DadhichDev0525/User_Managment.git
+   ```
+2. **Navigate to the project folder**
+   ```sh
+   cd User_Managment_App
+   ```
+3. **Install dependencies**
+   ```sh
+   npm install
+   ```
+4. **Start the development server**
+   ```sh
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# User_Managment
->>>>>>> d5004597688be7cf0cce487f790da5ab10fe380b
+## Usage
+1. **Login** using valid credentials.
+2. **View Users** in a paginated format.
+3. **Search for a User** using the search bar.
+4. **Edit or Delete Users** using respective buttons.
+5. **Logout** to end the session.
+
+## API Endpoints (Example)
+- `POST /login` - Authenticate user
+- `GET /users?page={page}` - Fetch users with pagination
+- `POST /users` - Add a new user
+- `PUT /users/{id}` - Update user details
+- `DELETE /users/{id}` - Remove a user
+
+## Contributing
+Feel free to fork this repo, create a branch, and submit a PR with improvements.
+
+## License
+This project is licensed under the **MIT License**.
+
+---
+Happy Coding! 🚀
+

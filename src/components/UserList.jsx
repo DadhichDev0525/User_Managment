@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useState,useEffect } from "react"
 import { API_URL } from "../utils/constants"
-import UserCard from "./userCard"
+import UserCard from "./UsersCard";
 import { TfiAngleRight, TfiAngleLeft } from "react-icons/tfi";
 import { FaSearch } from "react-icons/fa";
 import toast from "react-hot-toast";
